@@ -1,0 +1,21 @@
+import java.util.*;
+class A{
+    public double sum(int n){
+    int j=2;
+    int sum=0;
+    for(int i=1;i<=n;i++){
+        
+        sum =(int) (sum + Math.pow(i,j));
+        j++;
+    }
+    return sum;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	System.out.println(A.sum(n));
+	}
+}
